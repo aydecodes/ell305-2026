@@ -1,4 +1,4 @@
-#Code Snippet:
+# Code Snippet:
 ```
 #include <Wire.h> 
 #include <LiquidCrystal_AIP31068_I2C.h> //LCD library
@@ -225,7 +225,7 @@ void loop() {
 
 
 
-#Pin Diagram and the Connections:
+# Pin Diagram and the Connections:
 ```
 Keypad → Arduino
 
@@ -250,7 +250,7 @@ GND → GND
 <img width="1158" height="743" alt="image" src="https://github.com/user-attachments/assets/22d60db6-cda1-401f-aef6-dc936ae9e074" />
 
 
-#Simulation Image
+# Simulation Image
 <img width="1232" height="771" alt="image" src="https://github.com/user-attachments/assets/ce7fca78-336f-40da-bba1-282ad5ba4a34" />
 1. Basic simulation 1
 
