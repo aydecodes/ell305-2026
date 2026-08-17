@@ -1,4 +1,4 @@
-Code Snippet:
+#Code Snippet:
 ```
 #include <Wire.h> 
 #include <LiquidCrystal_AIP31068_I2C.h> //LCD library
@@ -224,6 +224,44 @@ void loop() {
 ```
 
 
+
+#Pin Diagram and the Connections:
+```
+Keypad → Arduino
+
+Row 1 → Pin 2
+Row 2 → Pin 3
+Row 3 → Pin 4
+Row 4 → Pin 5
+Row 5 → Pin 6
+Col 1 → Pin 7
+Col 2 → Pin 8
+Col 3 → Pin 9
+Col 4 → Pin 10
+
+LCD (I2C) → Arduino
+
+SDA → A4
+SCL → A5
+VCC → 5V
+GND → GND
+```
+
+<img width="1158" height="743" alt="image" src="https://github.com/user-attachments/assets/22d60db6-cda1-401f-aef6-dc936ae9e074" />
+
+
+#Simulation Image
+<img width="1232" height="771" alt="image" src="https://github.com/user-attachments/assets/ce7fca78-336f-40da-bba1-282ad5ba4a34" />
+1. Basic simulation 1
+
+<img width="1170" height="752" alt="image" src="https://github.com/user-attachments/assets/34aa3888-671f-4f49-b166-e88adfce426f" />
+2. Basic simulation 2
+
+<img width="1217" height="718" alt="image" src="https://github.com/user-attachments/assets/b1fb779f-cf8e-43b0-aea0-e80e90807492" />
+3. Div by 0 error
+
+<img width="1208" height="744" alt="image" src="https://github.com/user-attachments/assets/61cd95d7-711f-401e-8ebe-e19925cc3d74" />
+4. SQRT Function 's' directly prints output in front of the corresponding number, it is implement as a unary operator
 
 
 
