@@ -1,5 +1,5 @@
 Code Snippet:
-
+```
 #include <Wire.h> 
 #include <LiquidCrystal_AIP31068_I2C.h> //LCD library
 #include <math.h> //needed for sqrt()
@@ -221,6 +221,9 @@ void loop() {
   lcd.setCursor(0,0);
   lcd.print(display);
 }
+```
+
+
 
 
 
