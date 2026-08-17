@@ -251,17 +251,19 @@ GND → GND
 
 
 # Simulation Image
-<img width="1232" height="771" alt="image" src="https://github.com/user-attachments/assets/ce7fca78-336f-40da-bba1-282ad5ba4a34" />
+
 1. Basic simulation 1
+<img width="1232" height="771" alt="image" src="https://github.com/user-attachments/assets/ce7fca78-336f-40da-bba1-282ad5ba4a34" />
 
-<img width="1170" height="752" alt="image" src="https://github.com/user-attachments/assets/34aa3888-671f-4f49-b166-e88adfce426f" />
 2. Basic simulation 2
+<img width="1170" height="752" alt="image" src="https://github.com/user-attachments/assets/34aa3888-671f-4f49-b166-e88adfce426f" />
 
-<img width="1217" height="718" alt="image" src="https://github.com/user-attachments/assets/b1fb779f-cf8e-43b0-aea0-e80e90807492" />
 3. Div by 0 error
+<img width="1217" height="718" alt="image" src="https://github.com/user-attachments/assets/b1fb779f-cf8e-43b0-aea0-e80e90807492" />
 
-<img width="1208" height="744" alt="image" src="https://github.com/user-attachments/assets/61cd95d7-711f-401e-8ebe-e19925cc3d74" />
 4. SQRT Function 's' directly prints output in front of the corresponding number, it is implement as a unary operator
+<img width="1208" height="744" alt="image" src="https://github.com/user-attachments/assets/61cd95d7-711f-401e-8ebe-e19925cc3d74" />
+
 
 
 
