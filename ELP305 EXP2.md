@@ -11,7 +11,7 @@ char keys[5][4] = {
   {'8', '7', '6', '5'},
   {'=', '0', '.', '9'},
   {'*', '/', '-', '+'},
-  {'C', ')', '(', 's'}
+  {'C', ' ', 'D', 's'}
 };
 
 int rowPins[5] = {2, 3, 4, 5, 6};
@@ -20,12 +20,19 @@ int colPins[4] = {7, 8, 9, 10};
 String display = "";     //storing the display
 String currentNum = "";  //current number being typed
 
-// DMAS support: store the full expression as numbers[] and operators[]
-// so we can resolve * and / before + and - instead of left-to-right
+// for DMAS we will store all the numbers and the operators inside an array
+// so we can resolve * and / before + and - instead of instantaneous calculation
+
 double numbers[10];
 char   operators[10];
 int    numCount = 0;
 int    opCount = 0;
+
+bool lockerOn = false;
+
+String pass1 = "123456";
+String pass2 = "345";
+String pass3 = "9801";
 
 //setting up the entire system (keypad and lcd)
 void setup() {
@@ -84,10 +91,14 @@ float applyOp(float a, float b, char o) {
   return b;
 }
 
-//pushes the currently-typed number into the token array
-//called whenever an operator or '=' is pressed, so the number before it gets stored
+//function to store the current number, whenever = or an operator is pressed
 void pushCurrentNumber() {
-  if (currentNum.length() == 0) return;
+  if (currentNum.length() == 0) {
+    if (opCount == 0 && numCount == 0) {
+      numbers[0] = 0; numCount++;
+    }
+    return;
+  }
   numbers[numCount] = currentNum.toFloat();
   numCount++;
 }
@@ -118,6 +129,24 @@ float resolveDMAS() {
   return result;
 }
 
+void checkPass(){
+  if (currentNum == pass1 || currentNum == pass2 || currentNum == pass3){
+    display = "Access Granted!";
+  }
+  else{
+    display = "Access Denied!";
+  }
+  lcd.setCursor(0,1);
+  lcd.print(display);
+  delay(3000);
+  resetCalc();
+  lcd.clear();
+  lcd.setCursor(0,0);
+  display = "Pass: ";
+  lcd.print(display);
+  return;
+}
+
 
 //reads for the key using the getKey method and evaluates all the operations accordingly
 void loop() {
@@ -130,6 +159,36 @@ void loop() {
     resetCalc();
     lcd.clear();
     lcd.setCursor(0,0);
+    return;
+  }
+
+  if (key == 'D') {
+    lockerOn = !lockerOn;
+    resetCalc();
+    lcd.clear();
+    lcd.setCursor(0,0);
+
+    if (lockerOn){
+      display = "Pass: ";
+      lcd.print(display);
+    }
+    return;
+  }
+
+  if (lockerOn){
+    if (key == '='){
+      checkPass();
+      return;
+    }
+    display += key;
+    if (display.length() > 16){
+      display = display.substring(display.length() - 16);
+    }
+    currentNum+=key;
+
+    lcd.clear();
+    lcd.setCursor(0,0);
+    lcd.print(display);
     return;
   }
 
@@ -208,6 +267,7 @@ void loop() {
   }
 
   if (isOperator(key)) {
+
     pushCurrentNumber();
     operators[opCount] = key;
     opCount++;
@@ -264,7 +324,20 @@ GND → GND
 4. SQRT Function 's' directly prints output in front of the corresponding number, it is implement as a unary operator
 <img width="1208" height="744" alt="image" src="https://github.com/user-attachments/assets/61cd95d7-711f-401e-8ebe-e19925cc3d74" />
 
+5. Digilock Mode ON
+<img width="1298" height="793" alt="image" src="https://github.com/user-attachments/assets/efe4dd78-5861-4dd7-b907-cacef359e59c" />
 
+6. Digilock Correct Password: 123456
+<img width="1325" height="820" alt="image" src="https://github.com/user-attachments/assets/be3c08f3-16fb-4198-affe-21c8f05d9a0e" />
+
+7. Digilock Correct Password: 9801
+<img width="1340" height="804" alt="image" src="https://github.com/user-attachments/assets/a5abb0f0-336f-48e5-9ea8-5e983fb01978" />
+
+8. Digilock Correct Password: 345
+<img width="1348" height="801" alt="image" src="https://github.com/user-attachments/assets/94d29085-a7c4-497a-a89d-a5ce12fcd6d0" />
+
+9. Digilock Incorrect Password: 12345678
+<img width="1414" height="784" alt="image" src="https://github.com/user-attachments/assets/ae632fce-17ff-48c3-b007-ccda13a8b3ef" />
 
 
 
