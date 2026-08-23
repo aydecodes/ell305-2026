@@ -290,7 +290,8 @@ void loop() {
 <img width="1999" height="1007" alt="image" src="https://github.com/user-attachments/assets/e25dd8bf-d93c-48b8-b6ae-27a65fe75122" />
 
 6. S1S0 = 11, Pulse Wave
-<img width="1961" height="1020" alt="image" src="https://github.com/user-attachments/assets/43bc9b7c-80bf-401c-b3c7-f3dd426782ef" />
+<img width="1940" height="1023" alt="image" src="https://github.com/user-attachments/assets/38fbc4bf-e4f7-4a3b-9c49-83cbbb8f5b37" />
+
 
 7. S1S0 = 00, right after 10 (Previous Wave still displayed, but amp and freq knobs cannot change the output as it is paused)
 <img width="1961" height="1020" alt="image" src="https://github.com/user-attachments/assets/29f2260b-f35d-4cb1-b83c-10a8b714b0a1" />
