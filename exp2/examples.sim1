@@ -1,0 +1,33 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-116,-248" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="../../../../../Documents/Arduino/ELP305/exp2_elp305/build/arduino.avr.uno/exp2_elp305.ino.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="KeyPad" CircId="KeyPad-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-260,-340" rotation="0" hflip="1" vflip="1" label="KeyPad-2" idLabPos="-8,-16" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="5" Cols="4" Key_Labels="123456789.0&#x3D+-/*sD C" />
+
+<item itemtype="Aip31068_i2c" CircId="Aip31068_i2c-5" mainComp="false" Show_id="true" Show_Val="false" Pos="60,-284" rotation="0" hflip="1" vflip="1" label="Aip31068_i2c-5" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2" Cols="16" Control_Code="62" Frequency="100 _kHz" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Aip31068_i2c-5PinSDA" endpinid="Uno-1-A4" pointList="76,-276,76,-224,36,-224" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Aip31068_i2c-5PinSCL" endpinid="Uno-1-A5" pointList="84,-276,84,-232,36,-232" />
+
+<item itemtype="Connector" uid="Connector-43" startpinid="KeyPad-2-Pin0" endpinid="Uno-1-2" pointList="-196,-332,-148,-332,-148,-216,-108,-216" />
+
+<item itemtype="Connector" uid="Connector-50" startpinid="KeyPad-2-Pin3" endpinid="Uno-1-5" pointList="-196,-284,-184,-284,-184,-192,-108,-192" />
+
+<item itemtype="Connector" uid="Connector-51" startpinid="KeyPad-2-Pin4" endpinid="Uno-1-6" pointList="-196,-268,-196,-184,-108,-184" />
+
+<item itemtype="Connector" uid="Connector-56" startpinid="KeyPad-2-Pin8" endpinid="Uno-1-7" pointList="-212,-252,-212,-176,-108,-176" />
+
+<item itemtype="Connector" uid="Connector-57" startpinid="KeyPad-2-Pin7" endpinid="Uno-1-8" pointList="-228,-252,-228,-160,-108,-160" />
+
+<item itemtype="Connector" uid="Connector-58" startpinid="KeyPad-2-Pin6" endpinid="Uno-1-9" pointList="-244,-252,-244,-152,-108,-152" />
+
+<item itemtype="Connector" uid="Connector-59" startpinid="KeyPad-2-Pin5" endpinid="Uno-1-10" pointList="-260,-252,-260,-144,-108,-144" />
+
+<item itemtype="Connector" uid="Connector-60" startpinid="KeyPad-2-Pin2" endpinid="Uno-1-4" pointList="-196,-300,-172,-300,-172,-200,-108,-200" />
+
+<item itemtype="Connector" uid="Connector-75" startpinid="KeyPad-2-Pin1" endpinid="Uno-1-3" pointList="-196,-316,-160,-316,-160,-208,-108,-208" />
+
+</circuit>
