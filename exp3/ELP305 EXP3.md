@@ -53,6 +53,13 @@ void setup() {
   display.setCursor(0, 0);
   display.println("GLCD Ready");
   display.display();        // push buffer to screen
+
+  for (int y = 16; y < 64; y += 4) {
+    display.drawPixel(10, y, 1);       // single dot at each height
+    display.drawPixel(60, y, 1);
+    display.drawPixel(110, y, 1);
+  }
+  display.display();
 }
 
 // int getWaveSample(int waveType) {
@@ -84,8 +91,9 @@ void setup() {
 void sineWave(){
   int height = (27*amp)/1024;
   int width;
-  if (freq/16 == 0) width = 128;
-  else width = 64/(freq/16);
+  int cycles = map(freq, 0, 1023, 1, 16);  // adjust max cycles to taste
+  width = 128 / cycles;
+  if (width < 2) width = 2;  // floor to avoid over-dense/blank-looking output
 
   int halfW = width / 2;
   if (halfW == 0) halfW = 1; // avoid divide-by-zero at high freq
@@ -120,8 +128,9 @@ void sineWave(){
 void triWave(){
   int height = (27*amp)/1024;
   int width;
-  if (freq/16 == 0) width = 128;
-  else width = 64/(freq/16);
+  int cycles = map(freq, 0, 1023, 1, 16);  // adjust max cycles to taste
+  width = 128 / cycles;
+  if (width < 2) width = 2;  // floor to avoid over-dense/blank-looking output
 
   int halfW = width / 2;
   if (halfW == 0) halfW = 1; // avoid divide-by-zero at high freq
@@ -163,17 +172,23 @@ void triWave(){
 void pulseWave(){
   int height = (54*amp)/1024;
   int width;
-  if (freq/16 == 0) width = 128;
-  else width = 64/(freq/16);
+  int cycles = map(freq, 0, 1023, 1, 16);  // adjust max cycles to taste
+  width = 128 / cycles;
+  if (width < 2) width = 2;  // floor to avoid over-dense/blank-looking output
 
   display.clearDisplay();
   
   int prevY = 4;
+
   for (int x = 0; x < 127; x++){
     int y = ((x/width) % 2 == 0) ? 4 : (4 + height);
     
     if (y != prevY) {
-      display.drawLine(x, prevY, x, y, 1); // vertical edge
+      int yStart = min(y, prevY);
+      int yEnd = max(y, prevY);
+      for (int yy = yStart; yy <= yEnd; yy++) {
+        display.drawPixel(x, yy, 1);
+      }
     }
     display.drawPixel(x, y, 1); // horizontal segment
     
@@ -217,7 +232,9 @@ void loop() {
   prevfreq = freq;
 
   //in case of 0,0 dont print anything
+
 }
+
 ```
 
 # Pin Diagram and the Connections
