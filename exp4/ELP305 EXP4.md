@@ -264,30 +264,30 @@ void loop() {
 | Push Button (−)       | —      | D4, pulled down to GND, 1 kΩ pull-down        |
 | LED / Buzzer          | —      | D5 → 1 kΩ resistor → LED/Buzzer → GND         |
 
-<img width="1980" height="1056" alt="image" src="PASTE_CIRCUIT_DIAGRAM_IMAGE_URL_HERE" />
+<img width="1779" height="1067" alt="image" src="https://github.com/user-attachments/assets/e478518f-111b-4773-aa54-18cc7aa50fc9" />
 
 # Simulation Images
 
 1. Startup screen, RTC initializes and displays "The Klok"
-<img width="1954" height="1072" alt="image" src="PASTE_STARTUP_IMAGE_URL_HERE" />
+<img width="1794" height="1070" alt="image" src="https://github.com/user-attachments/assets/0042452f-1ad0-4eba-9446-2ff3802e799f" />
 
 2. Mode 0 — Normal time display, showing live HH:MM:SS updating every second
-<img width="1963" height="1020" alt="image" src="PASTE_TIME_DISPLAY_IMAGE_URL_HERE" />
+<img width="1805" height="1122" alt="image" src="https://github.com/user-attachments/assets/dba96cb6-f315-4e97-9a63-9f52eac84488" />
 
 3. Mode 1 — Alarm display mode, showing currently set alarm time
-<img width="1915" height="1074" alt="image" src="PASTE_ALARM_DISPLAY_IMAGE_URL_HERE" />
+<img width="1794" height="1123" alt="image" src="https://github.com/user-attachments/assets/42b9428d-0c6b-458b-80c4-cdedd5c9cf5a" />
 
 4. Mode 2 — Editing alarm hours using + / − buttons
-<img width="1982" height="1036" alt="image" src="PASTE_EDIT_HOURS_IMAGE_URL_HERE" />
+<img width="1841" height="1067" alt="image" src="https://github.com/user-attachments/assets/1ffd27df-d1ea-43b1-8e2a-32b12c9117a2" />
 
 5. Mode 3 — Editing alarm minutes using + / − buttons
-<img width="1999" height="1007" alt="image" src="PASTE_EDIT_MINUTES_IMAGE_URL_HERE" />
+<img width="1843" height="1144" alt="image" src="https://github.com/user-attachments/assets/264ed9eb-a48f-42ed-9f42-713a0a704cf4" />
 
 6. Mode 4 — Editing alarm seconds using + / − buttons
-<img width="1940" height="1023" alt="image" src="PASTE_EDIT_SECONDS_IMAGE_URL_HERE" />
+<img width="1814" height="1061" alt="image" src="https://github.com/user-attachments/assets/b19a7075-a6ef-48f3-aff2-02376e26683e" />
 
-7. Alarm triggered — current time matches alarm time, LED/buzzer on D5 turns ON
-<img width="1961" height="1020" alt="image" src="PASTE_ALARM_TRIGGERED_IMAGE_URL_HERE" />
+7. Alarm triggered — current time crosses alarm time, LED/buzzer on D5 turns ON (for 5 minutes)
+<img width="1823" height="1072" alt="image" src="https://github.com/user-attachments/assets/572e2879-ed7b-455a-9060-2ac56ac2d8b3" />
 
 8. Alarm auto-off after 5 minutes elapsed since trigger
 <img width="1961" height="1020" alt="image" src="PASTE_ALARM_TIMEOUT_IMAGE_URL_HERE" />
