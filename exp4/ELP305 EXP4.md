@@ -288,6 +288,3 @@ void loop() {
 
 7. Alarm triggered — current time crosses alarm time, LED/buzzer on D5 turns ON (for 5 minutes)
 <img width="1823" height="1072" alt="image" src="https://github.com/user-attachments/assets/572e2879-ed7b-455a-9060-2ac56ac2d8b3" />
-
-8. Alarm auto-off after 5 minutes elapsed since trigger
-<img width="1961" height="1020" alt="image" src="PASTE_ALARM_TIMEOUT_IMAGE_URL_HERE" />
