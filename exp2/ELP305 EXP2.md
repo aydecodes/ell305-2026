@@ -1,3 +1,5 @@
+# Exp - 2       - Calculator using the Arduino, And Digilock
+
 # Code Snippet:
 ```
 #include <Wire.h> 
