@@ -1,3 +1,5 @@
+# Exp - 3  -     Quick-and-Dirty Function Generator
+
 # Code Snippet:
 ```
 #include <Adafruit_GFX.h>   // include adafruit GFX library
