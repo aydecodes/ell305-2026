@@ -1,0 +1,13 @@
+# Sobel Image Processing System
+
+# Motivation and Significance
+The objective of this project is to implement an image edge-detection algorithm, specifically the Sobel operator, on an FPGA and compare its execution time with that of a general-purpose CPU performing the same computation sequentially. The project explores hardware acceleration and demonstrates how specialised digital hardware can be designed for computational tasks.
+
+Edge detection is an important operation in digital image processing and computer vision. It identifies significant changes in pixel intensity, helping extract boundaries, contours and structural information from images. Such information is useful in applications including object recognition, image segmentation and feature extraction. Although modern deep-learning-based object detection systems generally learn visual features directly rather than relying on conventional edge detectors, algorithms such as Sobel remain fundamental examples of image-processing techniques.
+
+The Sobel operator calculates horizontal and vertical intensity gradients over a local (3x3) neighbourhood of pixels. These gradients are combined to obtain an approximate edge magnitude, indicating the strength of an edge at each pixel location. Applying this computation repeatedly across an image provides a practical task for evaluating different computational architectures.
+
+In this project, the Sobel algorithm is implemented as a dedicated hardware datapath using Verilog HDL on a Xilinx Zynq-7000 FPGA. The design incorporates arithmetic operations, registers and control logic to perform pixel-level calculations. A corresponding C++ implementation serves as a software reference. Comparing their execution times allows the performance of dedicated hardware to be evaluated against sequential software execution, highlighting the potential benefits of specialised processing.
+
+This comparison is particularly relevant given the increasing computational demands of artificial intelligence and computer vision. Modern AI applications rely on specialised architectures such as GPUs, TPUs and neural processing units to accelerate computationally intensive operations. While general-purpose CPUs offer flexibility, dedicated hardware can be optimised for particular workloads, potentially improving processing throughput and energy efficiency. By measuring and comparing execution times for the same Sobel computation, this project demonstrates the fundamental motivation behind hardware acceleration and the importance of specialised computing architectures in modern computational systems.
+
