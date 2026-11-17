@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+PASS: All zero | Output=0
+PASS: Uniform intensity | Output=0
+PASS: Vertical edge | Output=255
+PASS: Horizontal edge | Output=255
+PASS: Saturated gradient | Output=255
+
+ALL TESTS PASSED!
+$finish called at time : 130 ns : File "C:/Users/atharva/vivado_projects/sobel_project_small_image_verification/sobel_project.srcs/sim_1/new/tb_sobel_core.v" Line 133

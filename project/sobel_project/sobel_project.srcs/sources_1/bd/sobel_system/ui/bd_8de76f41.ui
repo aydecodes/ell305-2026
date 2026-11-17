@@ -1,0 +1,40 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.16629",
+   "Default View_TopLeft":"20,-565",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1560 -y -190 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1560 -y -160 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 580 -y -220 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 180 -y -250 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 3 -x 1050 -y -310 -defaultsOSRD
+preplace inst sobel_axis_wrapper_0 -pg 1 -lvl 2 -x 580 -y -460 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 2 -x 580 -y 20 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1400 -y -330 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 1050 -y -120 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -x 1050 -y -20 -defaultsOSRD
+preplace netloc ACLK_1 1 0 4 30 -380 350J -320 840 -210 1250
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 810 -330n
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 4 40 -130 330J -560 NJ -560 1260
+preplace netloc xlconstant_0_dout 1 2 2 880 -430 1230
+preplace netloc xlconstant_1_dout 1 2 2 880 -190 1220
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 2 370 -540 800
+preplace netloc axi_dma_0_M_AXI_MM2S 1 2 2 830J -420 N
+preplace netloc axi_dma_0_M_AXI_S2MM 1 2 2 860 -410 1240J
+preplace netloc axi_interconnect_0_M00_AXI 1 1 1 340 -250n
+preplace netloc axi_mem_intercon_M00_AXI 1 1 4 360 -550 NJ -550 NJ -550 1540
+preplace netloc processing_system7_0_DDR 1 2 3 850J -200 1250 -180 1540
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 820J -180 1240 -160 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 0 3 40 -370 NJ -370 790
+preplace netloc sobel_axis_wrapper_0_m_axis 1 1 2 370 -380 790
+levelinfo -pg 1 0 180 580 1050 1400 1560
+pagesize -pg 1 -db -bbox -sgen -20 -570 1900 580
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"2"
+}

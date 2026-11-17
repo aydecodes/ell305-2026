@@ -1,0 +1,4 @@
+domain_path: D:\AyDee\Vitis\sobel_vitis_workspace\sobel_platform_v2\export\sobel_platform_v2\sw\standalone_ps7_cortexa9_0
+app_src_dir: D:\AyDee\Vitis\2025.1\Vitis\data\embeddedsw\lib\sw_apps\empty_application
+template: empty_application
+lang: c

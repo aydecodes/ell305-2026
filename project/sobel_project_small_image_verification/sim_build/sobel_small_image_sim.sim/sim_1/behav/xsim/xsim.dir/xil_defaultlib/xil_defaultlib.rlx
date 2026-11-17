@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/atharva/vivado_projects/sobel_project_small_image_verification/sim_build/sobel_small_image_sim.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+C:/Users/atharva/vivado_projects/sobel_project_small_image_verification/sobel_project.srcs/sim_1/new/tb_sobel_small_image_processor.v,1794301195,verilog,,,,tb_sobel_small_image_processor,,,D:/AyDee/Vivado/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/atharva/vivado_projects/sobel_project_small_image_verification/sobel_project.srcs/sources_1/new/sobel_core.v,1793616217,verilog,,C:/Users/atharva/vivado_projects/sobel_project_small_image_verification/sobel_project.srcs/sources_1/new/sobel_small_image_processor.v,,sobel_core,,,D:/AyDee/Vivado/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/atharva/vivado_projects/sobel_project_small_image_verification/sobel_project.srcs/sources_1/new/sobel_small_image_processor.v,1794301042,verilog,,C:/Users/atharva/vivado_projects/sobel_project_small_image_verification/sobel_project.srcs/sim_1/new/tb_sobel_small_image_processor.v,,sobel_small_image_processor,,,D:/AyDee/Vivado/2025.1/Vivado/data/rsb/busdef,,,,,

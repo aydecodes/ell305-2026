@@ -1,0 +1,12 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/atharva/vivado_projects/sobel_ip_repo/src/line_buffer.v,1793943256,verilog,,C:/Users/atharva/vivado_projects/sobel_project/scope_debug/sobel_axis_scope_top.v,,line_buffer,,,D:/AyDee/Vivado/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/atharva/vivado_projects/sobel_ip_repo/src/sobel_axis_wrapper.v,1793943256,verilog,,C:/Users/atharva/vivado_projects/sobel_ip_repo/src/sobel_core.v,,sobel_axis_wrapper,,,D:/AyDee/Vivado/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/atharva/vivado_projects/sobel_ip_repo/src/sobel_core.v,1793943256,verilog,,C:/Users/atharva/vivado_projects/sobel_ip_repo/src/sobel_stream_top.v,,sobel_core,,,D:/AyDee/Vivado/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/atharva/vivado_projects/sobel_ip_repo/src/sobel_stream_top.v,1793943256,verilog,,C:/Users/atharva/vivado_projects/sobel_ip_repo/src/window_generator.v,,sobel_stream_top,,,D:/AyDee/Vivado/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/atharva/vivado_projects/sobel_ip_repo/src/window_generator.v,1793943256,verilog,,C:/Users/atharva/vivado_projects/sobel_project/scope_debug/tb_sobel_axis_scope_top.v,,window_generator,,,D:/AyDee/Vivado/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/atharva/vivado_projects/sobel_project/scope_debug/sim_build/sobel_axis_scope_sim.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+C:/Users/atharva/vivado_projects/sobel_project/scope_debug/sobel_axis_scope_top.v,1794296049,verilog,,C:/Users/atharva/vivado_projects/sobel_ip_repo/src/sobel_axis_wrapper.v,,sobel_axis_scope_top,,,D:/AyDee/Vivado/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/atharva/vivado_projects/sobel_project/scope_debug/tb_sobel_axis_scope_top.v,1794298903,verilog,,,,tb_sobel_axis_scope_top,,,D:/AyDee/Vivado/2025.1/Vivado/data/rsb/busdef,,,,,

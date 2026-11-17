@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/atharva/vivado_projects/sobel_ip_repo/src/line_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module line_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/atharva/vivado_projects/sobel_project/scope_debug/sobel_axis_scope_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_axis_scope_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/atharva/vivado_projects/sobel_ip_repo/src/sobel_axis_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_axis_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/atharva/vivado_projects/sobel_ip_repo/src/sobel_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/atharva/vivado_projects/sobel_ip_repo/src/sobel_stream_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobel_stream_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/atharva/vivado_projects/sobel_ip_repo/src/window_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module window_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/atharva/vivado_projects/sobel_project/scope_debug/tb_sobel_axis_scope_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_sobel_axis_scope_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/atharva/vivado_projects/sobel_project/scope_debug/sim_build/sobel_axis_scope_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

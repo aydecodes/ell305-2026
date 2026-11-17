@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+PASS: outputs = 6, 10, 12, 18
+$finish called at time : 76 ns : File "C:/Users/atharva/vivado_projects/sobel_project_small_image_verification/sobel_project.srcs/sim_1/new/tb_sobel_small_image_processor.v" Line 40

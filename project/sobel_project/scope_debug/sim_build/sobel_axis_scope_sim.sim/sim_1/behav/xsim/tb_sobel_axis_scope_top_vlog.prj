@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "D:/AyDee/Vivado/2025.1/Vivado/data/rsb/busdef" \
+"../../../../../../../sobel_ip_repo/src/line_buffer.v" \
+"../../../../../sobel_axis_scope_top.v" \
+"../../../../../../../sobel_ip_repo/src/sobel_axis_wrapper.v" \
+"../../../../../../../sobel_ip_repo/src/sobel_core.v" \
+"../../../../../../../sobel_ip_repo/src/sobel_stream_top.v" \
+"../../../../../../../sobel_ip_repo/src/window_generator.v" \
+"../../../../../tb_sobel_axis_scope_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
